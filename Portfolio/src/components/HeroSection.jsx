@@ -7,21 +7,21 @@ export const HeroSection = () => {
         id="hero"
         className="min-h-screen flex flex-col items-center justify-center relative px-4"
         >
-            <div className="grid grid-cols-2 gap-24 max-w-7xl mx-2 z-10">
-                <div className="space-y-6 text-left pr-8">
-                    <h1 className="text-6xl font-bold tracking-tight">
+            <div className="grid grid-cols-2 gap-12 max-w-7xl mx-2 z-10">
+                <div className="space-y-6 text-left">
+                    <h1 className="text-7xl font-bold tracking-tight">
                         <span className="text-dark">Hi, I'm</span>
                         <span className="text-blue"> Wesley Lawson.</span>
                     </h1>
-                    <p className="text-2xl font-light text-dark">
+                    <p className="text-3xl font-light text-dark">
                     Seeking a Full-Time Job as a Software Engineer.
                     </p>
-                    <p className="text-lg font-extralight text-dark">
+                    <p className="text-xl font-extralight text-dark">
                      I have developed a solid technical foundation reflected by my proficiency in programming languages
                       such as Python and Go, as well as full-stack frameworks like Django and React.
                     </p>
 
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="grid grid-cols-3 gap-3 mb-2">
                         <div className="mx-2 my-1 text-left pr-2">
                             <p className="text-4xl font-bold text-deepgreen">Senior</p>
                             <p className="text-xl font-semibold text-dark">at Boston College</p>
@@ -39,7 +39,7 @@ export const HeroSection = () => {
 
                 </div>
                 
-                <div className="space-y-6 justify-center pl-8">
+                <div className="flex space-y-6 justify-center">
                     <img
                         src={profilePic}
                         alt="Wesley Lawson portrait"
