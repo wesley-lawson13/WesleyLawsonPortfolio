@@ -29,7 +29,7 @@ export const Navbar = () => {
             <div className="container flex items-center justify-between">
             <a href="#hero" className="text-xl font-bold text-dark flex items-center">
                 <span className="relative z-10">
-                    Wesley Lawson | <span className="text-blue">Portfolio</span>
+                    Wesley Lawson <span className="text-blue">Portfolio</span>
                 </span>
             </a>  
 

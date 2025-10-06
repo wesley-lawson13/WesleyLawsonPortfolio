@@ -1,13 +1,12 @@
 import { BookOpenCheck, ClockFading, Code, Dock } from "lucide-react";
-import reactIcon from "@/assets/react.svg";
 import {Card, CardContent } from "./ui/Card";
 
 export const AboutSection = () => {
     const cardInfo = [
         {icon: ClockFading, info: "Years Coding", value: "3+"},
-        {icon: BookOpenCheck, info: "Relevant Courses", value: "15+"},
-        {icon: Code, info: "Proficient Coding Languages", value: "10+"},
-        {icon: Dock, info: "Mastered Tools and Frameworks", value: "9+"},
+        {icon: BookOpenCheck, info: "Relevant Courses", value: "15"},
+        {icon: Code, info: "Proficient Coding Languages", value: "10"},
+        {icon: Dock, info: "Mastered Tools and Frameworks", value: "9"},
     ]
     return (
         <section 
@@ -16,13 +15,13 @@ export const AboutSection = () => {
         >
             <div className="mx-auto z-10 max-w-7xl">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-dark mb-4">About Me</h2>
+                    <h2 className="text-4xl font-bold text-dark mb-4">About <span className="text-blue">Me</span></h2>
                     <p className="text-lg text-dark font-normal">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
             
                 <div className="container grid grid-cols-2 gap-12">
                     <div className="text-left mx-2 my-auto">
-                        <h3 className="text-2xl text-blue mb-4">Hey, I'm Wes!</h3>
+                        <h3 className="text-2xl font-semibold text-blue mb-4">Hey, I'm Wes!</h3>
                         <p className="text-lg text-dark mb-3 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, eveniet provident maiores soluta non laborum perferendis nobis accusamus adipisci, debitis atque nesciunt vel omnis sed?
                         </p>
                         <p className="text-lg text-dark mb-3 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, eveniet provident maiores soluta non laborum perferendis nobis accusamus adipisci, debitis atque nesciunt vel omnis sed?

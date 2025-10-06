@@ -1,5 +1,8 @@
 import profilePic from "@/assets/Profile_Pic.jpeg";
 import { ArrowDown } from "lucide-react";
+import { VscGithub } from "react-icons/vsc";
+import { FiLinkedin } from "react-icons/fi";
+import { BiLogoGmail } from "react-icons/bi";
 
 export const HeroSection = () => {
     return (
@@ -35,6 +38,12 @@ export const HeroSection = () => {
                             <p className="text-2xl font-semibold text-dark">Major GPA</p>
                             
                         </div>
+                    </div>
+
+                    <div className="flex justify-start mx-auto mt-6 gap-10">
+                        <a href="https://github.com/wesley-lawson13" className="text-dark"><VscGithub size={30}/></a>
+                        <a href="https://www.linkedin.com/in/wesley-lawson13/" className="text-dark"><FiLinkedin size={30}/></a>
+                        <a href="#contact-email" className="text-dark"><BiLogoGmail size={30} /></a>
                     </div>
 
                 </div>
