@@ -51,9 +51,9 @@ export const SkillsSection = () => {
             className="bg-background py-12 px-4 relative" 
         >
             <div className="container mx-auto z-10 max-w-5xl mb-5">
-                <div className="text-center mb-4">
+                <div className="text-center mb-10">
                     <h2 className="text-4xl font-bold text-dark mb-4">Technical <span className="text-blue">Skills</span></h2>
-                    <p className="text-lg text-dark font-normal">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p className="text-lg text-dark font-normal">Through Coursework, Relevant Experiences, and Projects, I've Developed the Following Proficiencies:</p>
                 </div>
 
                 <div className="flex flex-wrap justify-center mx-auto gap-2 mb-8">

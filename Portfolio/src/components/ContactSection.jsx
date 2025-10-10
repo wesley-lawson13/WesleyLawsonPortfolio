@@ -19,7 +19,7 @@ export const ContactSection = () => {
           Get In <span className="text-blue">Touch</span>
         </h2>
         <p className="text-lg text-dark font-normal mb-12">
-          Feel free to reach out via email, phone, or connect in person.
+          Feel Free to Reach Out via Email, Phone, or Connect in Person.
         </p>
 
         <div className="flex flex-col gap-8 items-center mb-15">

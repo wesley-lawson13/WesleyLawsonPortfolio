@@ -20,7 +20,7 @@ export const AboutSection = () => {
             About <span className="text-blue">Me</span>
           </h2>
           <p className="text-base sm:text-lg text-dark font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
+            College Student, Aspiring Guitarist, and Boston Celtics Superfan.
           </p>
         </div>
 
@@ -31,19 +31,20 @@ export const AboutSection = () => {
               Hey, I'm Wes!
             </h3>
             <p className="text-base sm:text-lg text-dark mb-3 font-light">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
-              eveniet provident maiores soluta non laborum perferendis nobis
-              accusamus adipisci, debitis atque nesciunt vel omnis sed?
+              I'm a current senior at Boston College studying computer science. I'm from 
+              Medfield, Massachusetts, and have two older sisters and a twin brother who attends Skidmore College in New York. 
+              Unfortunately, he got the height gene.
             </p>
             <p className="text-base sm:text-lg text-dark mb-3 font-light">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
-              eveniet provident maiores soluta non laborum perferendis nobis
-              accusamus adipisci, debitis atque nesciunt vel omnis sed?
+              At BC, I am a member of the Boston College Campus Activities Board and 
+              am going to be a Freshman League Captain in the spring semester. I have been lucky
+              enough to take a variety of interesting courses, some of my favorites being Computer Networks,
+              Software Engineering, and History of Popular Music.
             </p>
             <p className="text-base sm:text-lg text-dark mb-3 font-light">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
-              eveniet provident maiores soluta non laborum perferendis nobis
-              accusamus adipisci, debitis atque nesciunt vel omnis sed?
+              In my free time, I enjoy spending time with friends watching sports, specifically the Boston Celtics,
+               and playing board games like Settlers of Catan, which is my favorite. Currently, some of my personal goals 
+              are to learn the guitar, run another half-marathon, and improve my cooking skills. 
             </p>
           </div>
 

@@ -52,7 +52,7 @@ export const HeroSection = () => {
           <img
             src={profilePic}
             alt="Wesley Lawson portrait"
-            className="w-48 h-64 sm:w-60 sm:h-80 md:w-72 md:h-[28rem] object-cover object-top rounded-[2rem] shadow-xl"
+            className="w-48 h-64 sm:w-60 sm:h-80 md:w-72 md:h-[28rem] object-cover object-top rounded-[2rem] shadow-md hover:shadow-xl hover:scale-101 transition-shadow"
           />
         </div>
 

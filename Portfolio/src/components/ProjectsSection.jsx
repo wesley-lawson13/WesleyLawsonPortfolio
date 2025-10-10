@@ -4,24 +4,24 @@ import { FaGithub } from "react-icons/fa";
 const projects = [
     {
         id: 1,
-        title: "collaBCrate", 
-        description: "",
+        title: "BConnected", 
+        description: "A networking app that allows BC students to connect with non-profits, charities, and other BC students for pro-bono work.",
         image: "/projects/ComingSoon.png",
         tags: ["React", "Tailwind CSS", "Figma", "Prisma", "Supabase", "Full-Stack", "Web Development"],
-        githubUrl: "",
+        githubUrl: "https://github.com/wesley-lawson13/BConnected",
     },
     {
         id: 2,
         title: "Wesley Lawson Portfolio", 
-        description: "",
+        description: "You're looking at it! My personal portfolio website created to improve my front-end development skills and share some of my projects, skills, and hobbies.",
         image: "/projects/PortfolioImage.png",
-        tags: ["React", "Figma", "TypeScript", "Tailwind CSS", "Web Development"],
+        tags: ["React", "Figma", "TypeScript", "Tailwind CSS", "Web Development", "Vercel"],
         githubUrl: "https://github.com/wesley-lawson13/WesleyLawsonPortfolio",
     },
     {
         id: 3,
         title: "PeerAssess", 
-        description: "",
+        description: "A full-stack assessment website that allows BC professors and students to assess each other and recieve real-time feedback and statistics on their work.",
         image: "/projects/PeerAssess.png",
         tags: ["Django", "Python", "GoogleOAuth", "Web Development", "Bootstrap", "Git", "Agile Development"],
         githubUrl: "https://github.com/CSCI3356-Spring2025/Ctrl-Alt-Elite",
@@ -38,7 +38,7 @@ export const ProjectsSection = () => {
 
                 <div className="text-center mb-10">
                     <h2 className="text-4xl font-bold text-dark mb-4">Featured <span className="text-blue">Projects</span></h2>
-                    <p className="text-lg text-dark font-normal">My recent projects and some I'm excited to debut shortly.</p>
+                    <p className="text-lg text-dark font-normal">My Recent Projects and Some I'm Excited to Debut Shortly.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
@@ -52,7 +52,7 @@ export const ProjectsSection = () => {
                             </div>
                             <div className="mx-2 text-center text-xl mb-5">
                                 <h5 className="text-dark font-bold mb-2">{project.title}</h5>
-                                <p className="text-dark font-light text-sm mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem adipisci voluptas modi fugiat esse nam?</p>
+                                <p className="text-dark font-light text-sm mb-3">{project.description}</p>
                                 <div className="flex flex-wrap gap-2 mb-4 justify-center">
                                     {project.tags.map((tag) => (
                                         <span className="bg-muted rounded-lg text-dark border-muted px-2 py-2 text-xs">{tag}</span>

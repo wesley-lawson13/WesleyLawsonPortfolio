@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 import { useEffect, useState } from 'react'
-import { FiMenu, FiX } from "react-icons/fi"; // 👈 add these icons
+import { FiMenu, FiX } from "react-icons/fi"; 
 
 const navItems = [
     {name: "About", href: "#about"},
@@ -11,11 +11,11 @@ const navItems = [
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // 👈 for mobile toggle
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10); // 👈 fixed window.screenY typo
+      setIsScrolled(window.scrollY > 10); 
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -29,14 +29,12 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        {/* Logo */}
         <a href="#hero" className="text-lg sm:text-xl font-bold text-dark flex items-center">
           <span className="relative z-10">
             Wesley Lawson <span className="text-blue">Portfolio</span>
           </span>
         </a>
 
-        {/* Desktop Nav */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
             <a
@@ -49,7 +47,6 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-dark focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -58,7 +55,6 @@ export const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-sm shadow-md py-4">
           <div className="flex flex-col items-center space-y-4">
