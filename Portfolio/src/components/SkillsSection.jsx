@@ -77,7 +77,7 @@ export const SkillsSection = () => {
                     {filteredSkills.map((skill, key) => (
                         <div
                             key={key}
-                            className="bg-muted/20 rounded-xl p-3 border-blue shadow-md relative justify-center flex gap-2"
+                            className="bg-muted/20 rounded-xl p-3 border-blue shadow-md relative justify-center flex gap-2 hover:scale-102 hover:shadow-lg transition-shadow"
                         >
                             <div className="items-center">
                                 <skill.icon className="text-beige" size={30}/>
