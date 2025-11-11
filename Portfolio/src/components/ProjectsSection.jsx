@@ -4,11 +4,11 @@ import { FaGithub } from "react-icons/fa";
 const projects = [
     {
         id: 1,
-        title: "BConnected", 
-        description: "A networking app that allows BC students to connect with non-profits, charities, and other BC students for pro-bono work.",
-        image: "/projects/ComingSoon.png",
-        tags: ["React", "Tailwind CSS", "Figma", "Prisma", "Supabase", "Full-Stack", "Web Development"],
-        githubUrl: "https://github.com/wesley-lawson13/BConnected",
+        title: "DevCheck", 
+        description: "A full-stack checklist for solo web developers that allows them to plan and keep track of their progress.",
+        image: "/projects/DevCheck.png",
+        tags: ["React", "Django REST framework", "Tailwind CSS", "JWT Authentication", "Figma", "Full-Stack", "Web Development"],
+        githubUrl: "https://github.com/wesley-lawson13/DevCheck",
     },
     {
         id: 2,
