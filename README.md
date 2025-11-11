@@ -1,6 +1,6 @@
 # Wesley Lawson Portfolio
 
-Welcome to my personal portfolio website — a modern, responsive site built to showcase my projects, experience, and a little bit about who I am.
+Welcome to my personal portfolio website! A modern, responsive site built to showcase my projects, experience, and a little bit about who I am.
 
 ![Portfolio Screenshot](./Portfolio/public/projects/PortfolioImage.png) 
 
