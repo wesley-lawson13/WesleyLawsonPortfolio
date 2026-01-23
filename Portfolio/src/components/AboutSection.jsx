@@ -3,10 +3,25 @@ import { Card, CardContent } from "./ui/Card";
 
 export const AboutSection = () => {
   const cardInfo = [
-    { icon: ClockFading, info: "Years Coding", value: "3+" },
-    { icon: BookOpenCheck, info: "Relevant Courses", value: "15" },
-    { icon: Code, info: "Proficient Coding Languages", value: "10" },
-    { icon: Dock, info: "Mastered Tools and Frameworks", value: "9" },
+    {
+      header: "DevCheck Is Now Deployed",
+      date: "January 21, 2026",
+      info: "My most recent project, DevCheck, is now deployed on Vercel (frontend) and Render (backend). It is a full-stack React + Django application built to help developers plan, track, and build projects all the way through from MVP to deployment. For more details, please see the projects section below.",
+    },
+    {
+      header: "Returning as a TA for CSCI1102",
+      date: "January 12, 2026",
+      info: "I am once again working as a teaching assistant for Professor Aviram's CSCI1102 class. I will be leading a discussion section of 15 students, going over challenging concepts and programming examples in C++.",
+    },
+    {
+      header: "Finished Fall 2025 Semester with a 3.83 GPA",
+      date: "December 17, 2025",
+      info: "I finished the first semester of my senior year with a 3.83 term GPA. During the semester, I took Algorithms, Computer Networks, and Technology and Culture, along with electives History of Popular Music and America's War in Vietnam.",
+    },
+    // { icon: ClockFading, info: "Years of Experience", value: "3+" },
+    // { icon: BookOpenCheck, info: "Relevant Courses", value: "15" },
+    // { icon: Code, info: "Proficient Coding Languages", value: "10" },
+    // { icon: Dock, info: "Mastered Tools and Frameworks", value: "9" },
   ];
 
   return (
@@ -15,51 +30,63 @@ export const AboutSection = () => {
       className="py-12 px-4 sm:px-6 md:px-10 relative flex flex-col items-center justify-center bg-muted/30"
     >
       <div className="mx-auto z-10 max-w-7xl w-full">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-dark mb-3 sm:mb-4">
             About <span className="text-blue">Me</span>
           </h2>
           <p className="text-base sm:text-lg text-dark font-normal">
-            College Student, Aspiring Guitarist, and Boston Celtics Superfan.
+            A Little Bit About Myself.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12">
-
           <div className="text-center md:text-left mx-2 my-auto">
-            <h3 className="text-2xl sm:text-3xl font-semibold text-blue mb-4">
-              Hey, I'm Wes!
+            <h3 className="text-2xl text-center sm:text-3xl font-semibold text-dark mb-4">
+              Hi, I'm Wes!
             </h3>
-            <p className="text-base sm:text-lg text-dark mb-3 font-light">
-              I'm a current senior at Boston College studying computer science. I'm from 
-              Medfield, Massachusetts, and have two older sisters and a twin brother who attends Skidmore College in New York. 
-              Unfortunately, he got the height gene.
+            <p className="text-base sm:text-lg text-dark mb-3 font-light indent-8">
+              I'm a senior at Boston College studying Computer Science. Through
+              coursework and personal projects, I have developed strong
+              technical skills with a specific focus on backend development and
+              full-stack development. Specifically, I have experience designing
+              RESTful APIs, implementing authentication, and deploying projects
+              using modern frameworks like Django and React.
             </p>
-            <p className="text-base sm:text-lg text-dark mb-3 font-light">
-              At BC, I am a member of the Boston College Campus Activities Board and 
-              am going to be a Freshman League Captain in the spring semester. I have been lucky
-              enough to take a variety of interesting courses, some of my favorites being Computer Networks,
-              Software Engineering, and History of Popular Music.
+            <p className="text-base sm:text-lg text-dark mb-3 font-light indent-8">
+              Outside of the classroom, I am an operations coordinator for the
+              Trips and Excursions department of the Boston College Campus
+              Activities Board where I plan and staff both interdepartment
+              events and off-campus events for BC students. Additionally, I am
+              an incoming Freshman League Captain, a program in which I
+              facilitate and guide weekly discussions with first year men about
+              mental health, classes, and social life on campus.
             </p>
-            <p className="text-base sm:text-lg text-dark mb-3 font-light">
-              In my free time, I enjoy spending time with friends watching sports, specifically the Boston Celtics,
-               and playing board games like Settlers of Catan, which is my favorite. Currently, some of my personal goals 
-              are to learn the guitar, run another half-marathon, and improve my cooking skills. 
+            <p className="text-base sm:text-lg text-dark mb-3 font-light indent-8">
+              In my free time, I enjoy spending time playing games with friends,
+              some of my favorite games being Settlers of Catan, Gin Rummy, and
+              Codenames. I also love listening to music, and always love
+              receiving new suggestions for music, specifically classic rock,
+              country, and indie music recommendations. In 2026, some things I
+              am looking forward to are graduating from college, running a half
+              marathon, and going on a hiking trip with friends in the summer.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6">
+          <div className="text-center md:text-left space-y-2 sm:space-y-4">
+            <h3 className="text-2xl text-center sm:text-3xl font-semibold text-blue mb-4">
+              Recent Updates:
+            </h3>
             {cardInfo.map((card, index) => (
               <Card
                 key={index}
-                className="text-center p-4 sm:p-6 bg-background border-muted hover:scale-[1.02] transition-transform hover:shadow-md transition-shadow"
+                className="p-2 sm:p-2 bg-background border-muted hover:scale-[1.02] transition-transform hover:shadow-md transition-shadow"
               >
-                <CardContent className="pt-4 sm:pt-6">
-                  <card.icon className="h-8 w-8 mx-auto mb-3 sm:mb-4 text-beige" />
+                <CardContent className="pt-2 sm:pt-4">
                   <div className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2 text-beige">
-                    {card.value}
+                    {card.header}
                   </div>
                   <div className="text-sm sm:text-md text-dark">
+                    <span className="font-semibold">{card.date}:</span>{" "}
                     {card.info}
                   </div>
                 </CardContent>

@@ -32,17 +32,21 @@ export const ContactSection = () => {
                 <info.icon size={28} className="text-dark" />
               </div>
               <div className="text-left">
-                <h5 className="text-lg font-semibold text-dark">
-                  {info.type}
-                </h5>
+                <h5 className="text-lg font-semibold text-dark">{info.type}</h5>
                 <p className="text-blue text-base font-light">{info.value}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mx-auto">
-          <p className="text-dark font-normal"><i>Thank you for checking out my portfolio website! Be on the lookout for more projects coming soon.</i></p>
+        <div className="text-center mx-auto flex flex-col m-auto">
+          <i className="text-dark font-normal mb-3">
+            Thank you for checking out my portfolio website! Be on the lookout
+            for more updates coming soon.
+          </i>
+          <p className="text-dark">
+            <b>Last Update:</b> January 22, 2026
+          </p>
         </div>
       </div>
     </section>
