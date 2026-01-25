@@ -63,10 +63,10 @@ export const AboutSection = () => {
             </p>
             <p className="text-base sm:text-lg text-dark mb-3 font-light indent-8">
               In my free time, I enjoy spending time playing games with friends,
-              some of my favorite games being Settlers of Catan, Gin Rummy, and
-              Codenames. I also love listening to music, and always love
-              receiving new suggestions for music, specifically classic rock,
-              country, and indie music recommendations. In 2026, some things I
+              some of my favorites being Settlers of Catan, Gin Rummy, and
+              Codenames. I also love listening to music and finding new 
+              music, specifically classic rock, country, and folk. If you have
+              any music recommendations, I would love to hear them! In 2026, some things I
               am looking forward to are graduating from college, running a half
               marathon, and going on a hiking trip with friends in the summer.
             </p>

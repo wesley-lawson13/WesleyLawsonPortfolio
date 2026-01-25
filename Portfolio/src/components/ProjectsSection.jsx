@@ -22,10 +22,26 @@ const projects = [
     liveUrl: "https://dev-check-wheat.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
+    title: "Networking Projects", 
+    description: "A collection of computer networking projects I completed during the Fall 2025 semester, including a DNS Server and a HTTP Web Server. Additionally, I'm working on a BitTorrent client, which you can also find in the repo below.",
+    image: "/projects/DNSOutput.png",
+    tags : [
+      "Go",
+      "Networking",
+      "DNS",
+      "HTTP",
+      "BitTorrent",
+      "In Class Projects"
+    ],
+    githubUrl: "https://github.com/wesley-lawson13/Networks-Projects",
+    deployedOrDemo: false,
+  },
+  {
+    id: 3,
     title: "Wesley Lawson Portfolio",
     description:
-      "You're looking at it! My personal portfolio website created to improve my frontend development skills and share some of my projects, skills, and hobbies.",
+      "You're looking at it! My personal portfolio website created to improve my frontend development skills and share some of my projects, skills, and hobbies. Thank you for checking it out!",
     image: "/projects/PortfolioImage.png",
     tags: [
       "React",
@@ -39,7 +55,7 @@ const projects = [
     deployedOrDemo: false,
   },
   {
-    id: 3,
+    id: 4,
     title: "PeerAssess",
     description:
       "An assessment website that allows BC professors and students to recieve real-time feedback and statistics on their work.",
@@ -119,13 +135,21 @@ export const ProjectsSection = () => {
               </div>
 
               <div className="flex flex-wrap gap-4 mb-3 mx-2 mt-auto">
-                <a
-                  href={project.githubUrl}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(
+                      `${project.githubUrl}`,
+                      "_blank",
+                      "noopener, noreferrer"
+                    );
+                  }}
                   className="inline-flex gap-2 mx-auto px-4 py-2 bg-dark border-dark text-background hover:bg-deepgreen rounded-xl text-lg"
+
                 >
                   <FaGithub size={25} />
                   <span>Source Code</span>
-                </a>
+                </button>
               </div>
             </a>
           ))}
