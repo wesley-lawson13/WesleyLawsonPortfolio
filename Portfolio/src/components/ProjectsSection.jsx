@@ -88,19 +88,15 @@ export const ProjectsSection = () => {
           <p className="text-lg text-dark font-normal">
             My Recent Projects and Some I'm Excited to Debut Shortly. If the
             project is <span className="text-blue font-semibold">LIVE</span>,
-            click on it to take you to the landing page!
+            click on the light blue button to take you to the landing page!
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {projects.map((project, key) => (
-            <a
+            <div
               key={key}
               className="bg-background border-muted shadow-lg rounded-xl hover:scale-101 hover:shadow-xl transition-shadow flex flex-col h-full"
-              href={project.deployedOrDemo ? project.liveUrl : "#"}
-              onClick={(e) => {
-                if (!project.deployedOrDemo) e.preventDefault();
-              }}
             >
               <div>
                 <div className="h-48 overflow-hidden rounded-xl mx-auto mb-5">
@@ -110,9 +106,9 @@ export const ProjectsSection = () => {
                 <div className="mx-2 text-center text-xl mb-5">
                   <div className="flex justify-center gap-2 items-center mb-auto">
                     {project.deployedOrDemo && (
-                      <span className="bg-blue text-background rounded-xl text-sm p-1.5">
+                      <a className="bg-blue text-background rounded-xl text-sm p-1.5" href={project.liveUrl}>
                         LIVE
-                      </span>
+                      </a>
                     )}
                     <h5 className="text-dark font-bold">{project.title}</h5>
                   </div>
@@ -135,23 +131,16 @@ export const ProjectsSection = () => {
               </div>
 
               <div className="flex flex-wrap gap-4 mb-3 mx-2 mt-auto">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open(
-                      `${project.githubUrl}`,
-                      "_blank",
-                      "noopener, noreferrer"
-                    );
-                  }}
+                  <a
+                  href={project.githubUrl}
                   className="inline-flex gap-2 mx-auto px-4 py-2 bg-dark border-dark text-background hover:bg-deepgreen rounded-xl text-lg"
 
                 >
                   <FaGithub size={25} />
                   <span>Source Code</span>
-                </button>
+                </a>
               </div>
-            </a>
+            </div>
           ))}
         </div>
 
