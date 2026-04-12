@@ -2,11 +2,17 @@ import { BookOpenCheck, ClockFading, Code, Dock } from "lucide-react";
 import { Card, CardContent } from "./ui/Card";
 
 export const AboutSection = () => {
+  // TODO: Add Lembas Links and remove DevCheck once the API is deployed.
   const cardInfo = [
+    {
+      header: "Built a BitTorrent Client",
+      date: "March 6, 2026",
+      info: "I have finished building my most recent project, a BitTorrent client in Go. This project helped me further my understanding of networking concepts through a hands-on, in depth ",
+    },
     {
       header: "DevCheck Is Now Deployed",
       date: "January 21, 2026",
-      info: "My most recent project, DevCheck, is now deployed on Vercel (frontend) and Render (backend). It is a full-stack React + Django application built to help developers plan, track, and build projects all the way through from MVP to deployment. For more details, please see the projects section below.",
+      info: "DevCheck is now deployed on Vercel (frontend) and Render (backend). It is a full-stack React + Django application built to help developers plan, track, and build projects all the way through from MVP to deployment. For more details, please see the projects section below.",
     },
     {
       header: "Returning as a TA for CSCI1102",
@@ -18,10 +24,6 @@ export const AboutSection = () => {
       date: "December 17, 2025",
       info: "I finished the first semester of my senior year with a 3.83 term GPA. During the semester, I took Algorithms, Computer Networks, and Technology and Culture, along with electives History of Popular Music and America's War in Vietnam.",
     },
-    // { icon: ClockFading, info: "Years of Experience", value: "3+" },
-    // { icon: BookOpenCheck, info: "Relevant Courses", value: "15" },
-    // { icon: Code, info: "Proficient Coding Languages", value: "10" },
-    // { icon: Dock, info: "Mastered Tools and Frameworks", value: "9" },
   ];
 
   return (
@@ -64,11 +66,12 @@ export const AboutSection = () => {
             <p className="text-base sm:text-lg text-dark mb-3 font-light indent-8">
               In my free time, I enjoy spending time playing games with friends,
               some of my favorites being Settlers of Catan, Gin Rummy, and
-              Codenames. I also love listening to music and finding new 
-              music, specifically classic rock, country, and folk. If you have
-              any music recommendations, I would love to hear them! In 2026, some things I
-              am looking forward to are graduating from college, running a half
-              marathon, and going on a hiking trip with friends in the summer.
+              Codenames. I also love listening to music and finding new music,
+              specifically classic rock, country, and folk. If you have any
+              music recommendations, I would love to hear them! In 2026, some
+              things I am looking forward to are graduating from college,
+              running a half marathon, and going on a hiking trip with friends
+              in the summer.
             </p>
           </div>
 

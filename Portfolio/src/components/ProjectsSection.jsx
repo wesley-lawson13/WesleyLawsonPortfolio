@@ -4,6 +4,47 @@ import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     id: 1,
+    title: "Lembas Links",
+    description: "A production-grade URL shortener built in Go that generates memorable, Lord of the Rings themed short links from movie quotes using an NLP preprocessing pipeline powered by spaCy and the Claude API, featuring Redis caching, API key authentication, rate limiting, and asynchronous click analytics.",
+    image: "/projects/ComingSoon.png",
+    tags: [
+      "Go", 
+      "Gin",
+      "Redis",
+      "Docker",
+      "Python",
+      "spaCy",
+      "Postgres",
+      "REST API",
+      "Auth Middleware",
+      "Rate Limiting"
+    ],
+    githubUrl: "https://github.com/wesley-lawson13/lembas-links",
+    deployedOrDemo: false,
+    liveUrl: null
+  },
+  {
+    id: 2,
+    title: "xvy Operating System extensions",
+    description: "A kernel-level extension of xv6 in C, implementing custom system calls and redesigning the process scheduler into a Multi-Level Feedback Queue (MFQ) architecture to gain hands-on experience with low-level systems programming.",
+    image: "/projects/xv6_Coursework.png",
+    tags: [
+      "C",
+      "xv6",
+      "Operating Systems", 
+      "Kernel Development",
+      "Systems Programming",
+      "MFQ Scheduler",
+      "System Calls",
+      "Call Stack Traversal",
+      "In Class Projects",
+    ],
+    githubUrl: "https://github.com/wesley-lawson13/Xv6-Extensions",
+    deployedOrDemo: false,
+    liveUrl: null
+  },
+  {
+    id: 3,
     title: "DevCheck",
     description:
       "A full-stack checklist app for solo web developers that allows users to simplify their programming workflow, track meaningful progress, and maximize efficiency through every stage of development.",
@@ -22,7 +63,7 @@ const projects = [
     liveUrl: "https://dev-check-wheat.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Networking Projects", 
     description: "A collection of computer networking projects I completed during the Fall 2025 semester, including a DNS Server and a HTTP Web Server. Additionally, I'm working on a BitTorrent client, which you can also find in the repo below.",
     image: "/projects/DNSOutput.png",
@@ -38,7 +79,7 @@ const projects = [
     deployedOrDemo: false,
   },
   {
-    id: 3,
+    id: 5,
     title: "Wesley Lawson Portfolio",
     description:
       "You're looking at it! My personal portfolio website created to improve my frontend development skills and share some of my projects, skills, and hobbies. Thank you for checking it out!",
@@ -55,7 +96,7 @@ const projects = [
     deployedOrDemo: false,
   },
   {
-    id: 4,
+    id: 6,
     title: "PeerAssess",
     description:
       "An assessment website that allows BC professors and students to recieve real-time feedback and statistics on their work.",

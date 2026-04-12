@@ -11,6 +11,7 @@ import {
   FaDocker,
   FaBootstrap,
 } from "react-icons/fa";
+import { DiRedis } from "react-icons/di";
 import { FaGolang } from "react-icons/fa6";
 import { TbBrandMysql } from "react-icons/tb";
 import { CgFigma } from "react-icons/cg";
@@ -18,28 +19,21 @@ import { SiDjango, SiPrisma, SiRender, SiAxios } from "react-icons/si";
 import {
   BiLogoSpringBoot,
   BiLogoJavascript,
-  BiLogoTypescript,
-  BiCategory,
 } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoDocumentText, IoLogoVercel } from "react-icons/io5";
+import { SiCplusplus, SiGin, SiSpacy, SiScikitlearn, SiJsonwebtokens } from "react-icons/si";
 
 const skills = [
   // Languages
   { name: "HTML/CSS", category: "Programming Languages", icon: FaHtml5 },
   {
-    name: "JavaScript",
-    category: "Programming Languages",
+    name: "JavaScript", category: "Programming Languages",
     icon: BiLogoJavascript,
-  },
-  {
-    name: "TypeScript",
-    category: "Programming Languages",
-    icon: BiLogoTypescript,
   },
   { name: "Python", category: "Programming Languages", icon: FaPython },
   { name: "Golang", category: "Programming Languages", icon: FaGolang },
-  { name: "C/C++", category: "Programming Languages", icon: Code },
+  { name: "C/C++", category: "Programming Languages", icon: SiCplusplus },
   { name: "PHP", category: "Programming Languages", icon: FaPhp },
   { name: "Java", category: "Programming Languages", icon: FaJava },
   { name: "SQL", category: "Programming Languages", icon: TbBrandMysql },
@@ -47,14 +41,10 @@ const skills = [
   // Tools and Frameworks
   { name: "Git", category: "Tools and Frameworks", icon: FaGitAlt },
   { name: "Docker", category: "Tools and Frameworks", icon: FaDocker },
-  { name: "Figma", category: "Tools and Frameworks", icon: CgFigma },
+  { name: "Redis", category: "Tools and Frameworks", icon: DiRedis },
   { name: "Django", category: "Tools and Frameworks", icon: SiDjango },
+  { name: "Gin", category: "Tools and Frameworks", icon: SiGin },
   { name: "React", category: "Tools and Frameworks", icon: FaReact },
-  {
-    name: "Spring Boot",
-    category: "Tools and Frameworks",
-    icon: BiLogoSpringBoot,
-  },
   {
     name: "Bootstrap CSS",
     category: "Tools and Frameworks",
@@ -65,11 +55,13 @@ const skills = [
     category: "Tools and Frameworks",
     icon: RiTailwindCssFill,
   },
-  { name: "IMathAS", category: "Tools and Frameworks", icon: Code },
-  { name: "Prisma", category: "Tools and Frameworks", icon: SiPrisma },
+  { name: "spaCy", category: "Tools and Frameworks", icon: SiSpacy }, 
+  { name: "scikit-learn", category: "Tools and Frameworks", icon: SiScikitlearn }, 
+  { name: "JWT", category: "Tools and Frameworks", icon: SiJsonwebtokens }, 
   { name: "Vercel", category: "Tools and Frameworks", icon: IoLogoVercel },
   { name: "Render", category: "Tools and Frameworks", icon: SiRender },
   { name: "Axios", category: "Tools and Frameworks", icon: SiAxios },
+  { name: "Figma", category: "Tools and Frameworks", icon: CgFigma },
 ];
 
 const categories = ["Programming Languages", "Tools and Frameworks"];
@@ -134,7 +126,7 @@ export const SkillsSection = () => {
             <i>Want to find out more? View my resume here.</i>
           </p>
           <a
-            href="/Lawson, Wesley Resume 2026.pdf"
+            href="/Lawson, Wesley Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-dark text-background px-6 py-3 rounded-full font-semibold shadow-md hover:bg-deepgreen transition-all duration-300"
