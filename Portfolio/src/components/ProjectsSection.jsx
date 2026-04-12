@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "xvy Operating System extensions",
+    title: "xv6 Operating System extensions",
     description: "A kernel-level extension of xv6 in C, implementing custom system calls and redesigning the process scheduler into a Multi-Level Feedback Queue (MFQ) architecture to gain hands-on experience with low-level systems programming.",
     image: "/projects/xv6_Coursework.png",
     tags: [
