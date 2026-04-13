@@ -7,7 +7,7 @@ export const AboutSection = () => {
     {
       header: "Built a BitTorrent Client",
       date: "March 6, 2026",
-      info: "I have finished building my most recent project, a BitTorrent client in Go. This project helped me further my understanding of networking concepts through a hands-on, in depth ",
+      info: "I have finished building my most recent project, a BitTorrent client in Go. This project helped me further my understanding of networking concepts through a hands-on, in depth exploration of how peer-to-peer file sharing works at a granular level, reinforcing networking fundamentals and improving my skills in Go and systems programming.",
     },
     {
       header: "DevCheck Is Now Deployed",
