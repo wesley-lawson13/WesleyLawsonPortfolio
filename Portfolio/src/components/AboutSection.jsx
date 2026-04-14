@@ -1,28 +1,21 @@
-import { BookOpenCheck, ClockFading, Code, Dock } from "lucide-react";
 import { Card, CardContent } from "./ui/Card";
 
 export const AboutSection = () => {
-  // TODO: Add Lembas Links and remove DevCheck once the API is deployed.
   const cardInfo = [
+    {
+      header: "Lembas Links Is Now Deployed",
+      date: "April 14, 2026",
+      info: "I deployed my most recent project, Lembas Links, which is a Lord of the Rings themed URL shortener built in Go (Gin) utilizing a Postgres database and Redis caching. In building Lembas Links, I gained hands-on experience designing and implementing a REST API, authentication middleware, and rate limiting, and was able to apply both my love of Lord of the Rings and my skills from my Natural Language Processing coursework in a learning scenario.",
+    },
     {
       header: "Built a BitTorrent Client",
       date: "March 6, 2026",
-      info: "I have finished building my most recent project, a BitTorrent client in Go. This project helped me further my understanding of networking concepts through a hands-on, in depth exploration of how peer-to-peer file sharing works at a granular level, reinforcing networking fundamentals and improving my skills in Go and systems programming.",
-    },
-    {
-      header: "DevCheck Is Now Deployed",
-      date: "January 21, 2026",
-      info: "DevCheck is now deployed on Vercel (frontend) and Render (backend). It is a full-stack React + Django application built to help developers plan, track, and build projects all the way through from MVP to deployment. For more details, please see the projects section below.",
+      info: "I finished building a BitTorrent client in Go. This project helped me further my understanding of networking concepts through a hands-on, in depth exploration of how peer-to-peer file sharing works at a granular level, reinforcing networking fundamentals and improving my skills in Go and systems programming.",
     },
     {
       header: "Returning as a TA for CSCI1102",
       date: "January 12, 2026",
       info: "I am once again working as a teaching assistant for Professor Aviram's CSCI1102 class. I will be leading a discussion section of 15 students, going over challenging concepts and programming examples in C++.",
-    },
-    {
-      header: "Finished Fall 2025 Semester with a 3.83 GPA",
-      date: "December 17, 2025",
-      info: "I finished the first semester of my senior year with a 3.83 term GPA. During the semester, I took Algorithms, Computer Networks, and Technology and Culture, along with electives History of Popular Music and America's War in Vietnam.",
     },
   ];
 
