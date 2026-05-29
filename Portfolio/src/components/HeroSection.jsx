@@ -25,30 +25,24 @@ export const HeroSection = () => {
             Thank you for checking out my portfolio website! Feel free to
             explore the rest of the site to learn more about myself, the
             projects I’ve built, and the skills I've developed during my time as
-            a student.
+            a student and beyond.
           </p>
 
-          <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-4">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4 mt-4">
             <div className="text-center lg:text-left">
               <p className="text-2xl sm:text-3xl font-bold text-deepgreen">
-                Senior
+                Alumni
               </p>
               <p className="text-sm sm:text-base font-semibold text-dark">
-                at Boston College
+                from Boston College
               </p>
             </div>
             <div className="text-center lg:text-left">
-              <p className="text-2xl sm:text-3xl font-bold text-deepgreen">
-                3.68
+              <p className="text-2xl sm:text-3xl font-bold text-green">
+                3.71
               </p>
               <p className="text-sm sm:text-base font-semibold text-dark">
-                GPA
-              </p>
-            </div>
-            <div className="text-center lg:text-left">
-              <p className="text-2xl sm:text-3xl font-bold text-green">3.74</p>
-              <p className="text-sm sm:text-base font-semibold text-dark">
-                Major GPA
+                Cumulative GPA
               </p>
             </div>
           </div>
