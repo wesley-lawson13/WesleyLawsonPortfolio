@@ -10,14 +10,14 @@ import {
   FaGitAlt,
   FaDocker,
   FaBootstrap,
+  FaRust,
 } from "react-icons/fa";
 import { DiRedis } from "react-icons/di";
 import { FaGolang } from "react-icons/fa6";
 import { TbBrandMysql } from "react-icons/tb";
 import { CgFigma } from "react-icons/cg";
-import { SiDjango, SiPrisma, SiRender, SiAxios } from "react-icons/si";
+import { SiDjango, SiRender, SiAxios } from "react-icons/si";
 import {
-  BiLogoSpringBoot,
   BiLogoJavascript,
 } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -26,14 +26,15 @@ import { SiCplusplus, SiGin, SiSpacy, SiScikitlearn, SiJsonwebtokens } from "rea
 
 const skills = [
   // Languages
+  { name: "Python", category: "Programming Languages", icon: FaPython },
+  { name: "Golang", category: "Programming Languages", icon: FaGolang },
+  { name: "C/C++", category: "Programming Languages", icon: SiCplusplus },
+  { name: "Rust", category: "Programming Languages", icon: FaRust },
   { name: "HTML/CSS", category: "Programming Languages", icon: FaHtml5 },
   {
     name: "JavaScript", category: "Programming Languages",
     icon: BiLogoJavascript,
   },
-  { name: "Python", category: "Programming Languages", icon: FaPython },
-  { name: "Golang", category: "Programming Languages", icon: FaGolang },
-  { name: "C/C++", category: "Programming Languages", icon: SiCplusplus },
   { name: "PHP", category: "Programming Languages", icon: FaPhp },
   { name: "Java", category: "Programming Languages", icon: FaJava },
   { name: "SQL", category: "Programming Languages", icon: TbBrandMysql },
