@@ -5,7 +5,7 @@ const projects = [
   {
     id: 1,
     title: "Lembas Links",
-    description: "A production-grade URL shortener built in Go that generates memorable, Lord of the Rings themed short links from movie quotes using an NLP preprocessing pipeline powered by spaCy and the Claude API, featuring Redis caching, API key authentication, rate limiting, and asynchronous click analytics. Deployed on Railway.",
+    description: "A production-grade URL shortener built in Go that generates memorable, Lord of the Rings themed short links from movie quotes using an NLP preprocessing pipeline powered by spaCy and the Claude API, featuring Redis caching, API key authentication, rate limiting, and asynchronous click analytics. Previously deployed on Railway.",
     image: "/projects/Lembas-Links.png",
     tags: [
       "Go", 
@@ -20,7 +20,7 @@ const projects = [
       "Rate Limiting"
     ],
     githubUrl: "https://github.com/wesley-lawson13/lembas-links",
-    deployedOrDemo: true,
+    deployedOrDemo: false,
     liveUrl: "https://lembas-links-production.up.railway.app/swagger/index.html"
   },
   {
