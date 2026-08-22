@@ -37,31 +37,23 @@ export const HeroSection = () => {
                 from Boston College
               </p>
             </div>
-            <div className="text-center lg:text-left">
-              <p className="text-2xl sm:text-3xl font-bold text-green">
-                3.71
-              </p>
-              <p className="text-sm sm:text-base font-semibold text-dark">
-                Cumulative GPA
-              </p>
+            <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8">
+              <a href="https://github.com/wesley-lawson13" className="text-dark">
+                <VscGithub size={28} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/wesley-lawson13/"
+                className="text-dark"
+              >
+                <FiLinkedin size={28} />
+              </a>
+              <a href="mailto:wesleylawson13@gmail.com" className="text-dark">
+                <BiLogoGmail size={28} />
+              </a>
             </div>
           </div>
-
-          <div className="flex justify-center lg:justify-start gap-6 sm:gap-8 mt-6">
-            <a href="https://github.com/wesley-lawson13" className="text-dark">
-              <VscGithub size={28} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/wesley-lawson13/"
-              className="text-dark"
-            >
-              <FiLinkedin size={28} />
-            </a>
-            <a href="mailto:wesleylawson13@gmail.com" className="text-dark">
-              <BiLogoGmail size={28} />
-            </a>
-          </div>
         </div>
+
 
         <div className="flex justify-center items-center mt-3 lg:mt-0">
           <img
