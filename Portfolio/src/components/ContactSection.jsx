@@ -45,7 +45,7 @@ export const ContactSection = () => {
             for more updates coming soon.
           </i>
           <p className="text-dark">
-            <b>Last Update:</b> August 12, 2026
+            <b>Last Update:</b> September 2, 2026
           </p>
         </div>
       </div>
