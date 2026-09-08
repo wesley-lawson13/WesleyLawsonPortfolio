@@ -9,20 +9,20 @@ import {
   FaJava,
   FaGitAlt,
   FaDocker,
-  FaBootstrap,
   FaRust,
+  FaAws,
 } from "react-icons/fa";
 import { DiRedis } from "react-icons/di";
 import { FaGolang } from "react-icons/fa6";
 import { TbBrandMysql } from "react-icons/tb";
-import { CgFigma } from "react-icons/cg";
-import { SiDjango, SiRender, SiAxios } from "react-icons/si";
+import { } from "react-icons/cg";
+import { SiDjango } from "react-icons/si";
 import {
   BiLogoJavascript,
 } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { IoDocumentText, IoLogoVercel } from "react-icons/io5";
-import { SiCplusplus, SiGin, SiSpacy, SiScikitlearn, SiJsonwebtokens } from "react-icons/si";
+import { IoDocumentText } from "react-icons/io5";
+import { SiCplusplus, SiGin, SiSpacy, SiJsonwebtokens, SiWireshark, SiAxios } from "react-icons/si";
 
 const skills = [
   // Languages
@@ -47,9 +47,7 @@ const skills = [
   { name: "Gin", category: "Tools and Frameworks", icon: SiGin },
   { name: "React", category: "Tools and Frameworks", icon: FaReact },
   {
-    name: "Bootstrap CSS",
-    category: "Tools and Frameworks",
-    icon: FaBootstrap,
+    name: "AWS", category: "Tools and Frameworks", icon: FaAws
   },
   {
     name: "Tailwind CSS",
@@ -57,12 +55,9 @@ const skills = [
     icon: RiTailwindCssFill,
   },
   { name: "spaCy", category: "Tools and Frameworks", icon: SiSpacy }, 
-  { name: "scikit-learn", category: "Tools and Frameworks", icon: SiScikitlearn }, 
   { name: "JWT", category: "Tools and Frameworks", icon: SiJsonwebtokens }, 
-  { name: "Vercel", category: "Tools and Frameworks", icon: IoLogoVercel },
-  { name: "Render", category: "Tools and Frameworks", icon: SiRender },
-  { name: "Axios", category: "Tools and Frameworks", icon: SiAxios },
-  { name: "Figma", category: "Tools and Frameworks", icon: CgFigma },
+  { name: "Axios", category: "Tools and Frameworks", icon: SiAxios }, 
+  { name: "Wireshark", category: "Tools and Frameworks", icon: SiWireshark }, 
 ];
 
 const categories = ["Programming Languages", "Tools and Frameworks"];

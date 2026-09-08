@@ -3,6 +3,11 @@ import { Card, CardContent } from "./ui/Card";
 export const AboutSection = () => {
   const cardInfo = [
     {
+      header: "Summer Updates",
+      date: "September 8, 2026",
+      info: "This summer, I took the opportunity to reflect on what I learned in my coursework at BC and prepare for my career in software engineering. I spent my time extending previous projects: Adding unit tests and concurrent functionality to the Recursive DNS Server, deploying Lembas Links on a custom AWS VPC, and clarifying documentation across my project repos. During this time, I greatly improved my agentic coding practices, deepened my DSA knowledge, and learned new technologies that I feel make me a stronger programmer.", 
+    },
+    {
       header: "Graduated from Boston College",
       date: "May 18, 2026",
       info: "I have officially graduated from Boston College with a B.A. in Computer Science. I completed my degree with a 3.71 cumulative GPA, earning cum laude distinction at the commencement ceremony."
@@ -11,11 +16,6 @@ export const AboutSection = () => {
       header: "Lembas Links Is Now Deployed",
       date: "April 14, 2026",
       info: "I deployed my most recent project, Lembas Links, which is a Lord of the Rings themed URL shortener built in Go (Gin) utilizing a Postgres database and Redis caching. In building Lembas Links, I gained hands-on experience designing and implementing a REST API, authentication middleware, and rate limiting, and was able to apply both my love of Lord of the Rings and my skills from my Natural Language Processing coursework in a learning scenario.",
-    },
-    {
-      header: "Built a BitTorrent Client",
-      date: "March 6, 2026",
-      info: "I finished building a BitTorrent client in Go. This project helped me further my understanding of networking concepts through a hands-on, in depth exploration of how peer-to-peer file sharing works at a granular level, reinforcing networking fundamentals and improving my skills in Go and systems programming.",
     },
   ];
 
