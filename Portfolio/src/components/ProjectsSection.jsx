@@ -32,7 +32,6 @@ const projects = [
       "Rate Limiting"
     ],
     githubUrl: "https://github.com/wesley-lawson13/lembas-links",
-    deployedOrDemo: true,
     liveUrl: "http://54.164.172.135",
     cats: ["Backend / API Development", "NLP / AI"],
   },
@@ -54,8 +53,6 @@ const projects = [
       "In Class Projects",
     ],
     githubUrl: "https://github.com/wesley-lawson13/Xv6-Extensions",
-    deployedOrDemo: false,
-    liveUrl: null,
     cats: ["Systems / Low-Level Programming"],
   },
   {
@@ -72,7 +69,6 @@ const projects = [
       "BitTorrent",
     ],
     githubUrl: "https://github.com/wesley-lawson13/Bit-Torrent-Client",
-    deployedOrDemo: false,
     cats: ["Systems / Low-Level Programming"],
   },
   {
@@ -90,7 +86,6 @@ const projects = [
       "In Class Projects"
     ],
     githubUrl: "https://github.com/wesley-lawson13/Networks-Projects",
-    deployedOrDemo: false,
     cats: ["Systems / Low-Level Programming"],
   },
   {
@@ -109,7 +104,6 @@ const projects = [
       "Axios",
     ],
     githubUrl: "https://github.com/wesley-lawson13/DevCheck",
-    deployedOrDemo: true,
     liveUrl: "https://dev-check-wheat.vercel.app/",
     cats: ["Full-Stack Web Development"]
   },
@@ -130,8 +124,7 @@ const projects = [
       "In Class Projects",
     ],
     githubUrl: "https://github.com/wesley-lawson13/headline-sentiment-stock-prediction",
-    deployedOrDemo: true,
-    liveUrl: "/projects/headline-sentiment-presentation.pdf",
+    demoUrl: "/projects/headline-sentiment-presentation.pdf",
     cats: ["NLP / AI"]
   },
 ];
@@ -166,8 +159,10 @@ export const ProjectsSection = () => {
           </h2>
           <p className="text-lg text-dark font-normal">
             My Recent Projects and Some I'm Excited to Debut Shortly. If the
-            project is <span className="text-blue font-semibold">LIVE</span> or has an associated demo / presentation,
-            click on the light blue button to take you to the see the linked resource!
+            project is <span className="text-blue font-semibold">LIVE</span> or
+            has a <span className="text-green font-semibold">DEMO</span> /
+            presentation, click on the tag next to its title to see the linked
+            resource!
           </p>
         </div>
 
@@ -215,9 +210,26 @@ export const ProjectsSection = () => {
 
                 <div className="mx-2 text-center text-xl mb-5">
                   <div className="flex justify-center gap-2 items-center min-h-14">
-                    {project.deployedOrDemo && (
-                      <a className="bg-blue text-background rounded-xl text-sm p-1.5" href={project.liveUrl}>
+                    {project.liveUrl && (
+                      <a
+                        className="bg-blue text-background hover:bg-blue/80 transition-colors rounded-xl text-sm p-1.5"
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View live site for ${project.title}`}
+                      >
                         LIVE
+                      </a>
+                    )}
+                    {project.demoUrl && (
+                      <a
+                        className="bg-green text-background hover:bg-deepgreen transition-colors rounded-xl text-sm p-1.5"
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View demo of ${project.title}`}
+                      >
+                        DEMO
                       </a>
                     )}
                     <h5 className="text-dark font-bold">{project.title}</h5>
