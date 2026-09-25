@@ -104,7 +104,6 @@ const projects = [
       "Axios",
     ],
     githubUrl: "https://github.com/wesley-lawson13/DevCheck",
-    liveUrl: "https://dev-check-wheat.vercel.app/",
     cats: ["Full-Stack Web Development"]
   },
   {
